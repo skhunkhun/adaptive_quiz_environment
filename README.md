@@ -18,7 +18,6 @@ This project implements an adaptive quiz environment using reinforcement learnin
 - Python 3.6+
 - [OpenAI Gym](https://github.com/openai/gym)
 - [TensorFlow](https://www.tensorflow.org/) (for DQN)
-- Other dependencies as listed in `requirements.txt`
 
 ### Installation
 
@@ -32,16 +31,11 @@ This project implements an adaptive quiz environment using reinforcement learnin
    cd adaptive_quiz_environment
    ```
 
-3. **Install the Required Packages:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ### Running the Project
 
 To train the agents and compare their performance, run the training script:
 ```bash
-python train_agents.py
+python gym_training.py
 ```
 
 This script outputs learning curves and logs that compare the performance of the Easy-Only baseline, Q-learning, and DQN agents across student profiles.
@@ -51,6 +45,5 @@ This script outputs learning curves and logs that compare the performance of the
 - **gym_env.py** – Contains the custom `QuizEnvironment` implementation.
 - **gym_qlearning.py** – Implements the table-based Q-learning agent.
 - **gym_dqn.py** – Implements the Deep Q-Network (DQN) agent.
-- **train_agents.py** – Script to train and compare the baseline, Q-learning, and DQN policies.
+- **gym_training.py** – Script to train and compare the baseline, Q-learning, and DQN policies.
 - **README.md** – This file.
-- **requirements.txt** – List of required Python packages.
